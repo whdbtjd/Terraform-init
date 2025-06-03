@@ -73,7 +73,7 @@ resource "aws_iam_user_policy" "ops_leader_policy" {
                 "s3:GetObject",
                 "s3:PutObject"
             ],
-            "Resource": "arn:aws:s3:::dev-bucket-whdbtjd/*"
+            "Resource": "arn:aws:s3:::ops-bucket-whdbtjd/*"
         }
       ]
     }
