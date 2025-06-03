@@ -41,3 +41,14 @@
 
 - 백엔드는 S3로 구성: 예시 `terraform-backend-bucket`
 - 락 관리는 DynamoDB 테이블로 구성: 예시 `terraform-lock`
+
+### 5. 파일 구조
+
+├── init.tf
+├── vpc.tf
+├── iam.tf
+├── s3.tf
+├── backend.tf
+├── variables.tf
+├── outputs.tf
+└── terraform.tfvars
