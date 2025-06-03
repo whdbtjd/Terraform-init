@@ -38,3 +38,48 @@ resource "aws_iam_group_membership" "ops_team_membership" {
       group = aws_iam_group.ops_team.name
 }
 
+resource "aws_iam_user_policy" "dev_leader_policy" {
+      name = "dev_leader_policy"
+      user = aws_iam_user.dev_leader.name
+
+      policy = <<EOF
+      {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject",
+                "s3:PutObject"
+            ],
+            "Resource": "arn:aws:s3:::dev-bucket-whdbtjd/*"
+        }
+      ]
+    }
+EOF
+}
+
+resource "aws_iam_user_policy" "ops_leader_policy" {
+       name = "ops_leader_policy"
+       user = aws_iam_user.ops_leader.name
+
+       policy = <<EOF
+        {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject",
+                "s3:PutObject"
+            ],
+            "Resource": "arn:aws:s3:::dev-bucket-whdbtjd/*"
+        }
+      ]
+    }
+EOF
+}
+
+
+
+
