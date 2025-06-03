@@ -1,7 +1,7 @@
-variable "dev_team_user" {
-     type = string
+variable "dev_team_users" {
+     type = list(string)
 }
 
-variable "ops_team_user" {
-     type = string
+variable "ops_team_users" {
+     type = list(string)
 }
