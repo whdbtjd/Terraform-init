@@ -32,8 +32,9 @@ resource "aws_iam_group_membership" "dev_team_membership" {
 
 resource "aws_iam_group_membership" "ops_team_membership" {
       name = "ops-team-terraform"
-      
+
       users = var.ops_team_users
 
       group = aws_iam_group.ops_team.name
 }
+
