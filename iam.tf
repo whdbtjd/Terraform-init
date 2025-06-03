@@ -80,6 +80,26 @@ resource "aws_iam_user_policy" "ops_leader_policy" {
 EOF
 }
 
+resource "aws_iam_user_policy" "dev_staff_policy" {
+      name = "dev_staff_policy"
+      user = aws_iam_user.dev_staff.name
+
+      policy = <<EOF
+       {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": "arn:aws:s3:::dev-bucket-whdbtjd/*"
+        }
+      ]
+    }
+EOF
+}
+
 
 
 
