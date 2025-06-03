@@ -16,7 +16,7 @@
 
 ### 2. S3 버킷
 
-- `dev-bucket`, `ops-bucket` 두 개 생성
+- `dev-bucket-whdbtjd`, `ops-bucket-whdbtjd` 두 개 생성
 - 퍼블릭 접근 차단
 - 버킷 정책은 IAM에 위임 (버킷 정책은 굳이 작성하지 않아도 됨)
 
