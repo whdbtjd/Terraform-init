@@ -6,7 +6,7 @@
 - 각 사용자 → 아래 그룹 중 하나에 소속:
     - `dev-group`
     - `ops-group`
-- 각 그룹에 붙는 정책:
+- 각 팀원에 붙는 정책:
     - 팀장: `s3:GetObject`, `s3:PutObject`
     - 팀원: `s3:GetObject`
 
