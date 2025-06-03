@@ -44,15 +44,7 @@
 
 ### 5. 파일 구조
 
-📁 프로젝트 루트
-├── init.tf
-├── vpc.tf
-├── iam.tf
-├── s3.tf
-├── backend.tf
-├── variables.tf
-├── outputs.tf
-└── terraform.tfvars
+<pre> ``` 프로젝트 루트 ├── init.tf ├── vpc.tf ├── iam.tf ├── s3.tf ├── backend.tf ├── variables.tf ├── outputs.tf └── terraform.tfvars ``` </pre>
 
 
 
