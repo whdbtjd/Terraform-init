@@ -13,3 +13,11 @@ resource "aws_iam_user" "ops_team_leader" {
 resource "aws_iam_user" "ops_team_staff" {
       name = "ops_team_staff"
 }
+
+resource "aws_iam_group" "dev_team" {
+      name = "dev_team"
+}
+
+resource "aws_iam_group" "ops_team" {
+      name = "ops_team"
+}
