@@ -27,12 +27,13 @@
 - CIDR: `10.0.0.0/16`
 - 퍼블릭 서브넷 2개: `10.0.1.0/24`, `10.0.2.0/24`
 - 프라이빗 서브넷 2개: `10.0.11.0/24`, `10.0.12.0/24`
+- 각 서브넷은 변수로 선언하여 관리
 
 ### 포함 구성
 
 - 인터넷 게이트웨이 (IGW)
-- NAT Gateway (EIP 포함)
-- 퍼블릭/프라이빗용 Routing Table 각 1개
+- NAT Gateway 2개 (EIP 포함)
+- 퍼블릭 Routing Table 1개, 프라이빗 Routing Table 2개
 - Routing Table → 각 서브넷에 Association 수행
 
 ---
