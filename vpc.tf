@@ -28,4 +28,7 @@ resource "aws_route_table" "public" {
        gateway_id = aws_internet_gateway.igw.id
      }
 }
-  
+
+resource "aws_eip" "nat" {
+  vpc = true
+}
