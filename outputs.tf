@@ -13,3 +13,7 @@ output "aws_vpc_public" {
 output "aws_vpc_private" {
      value = var.aws_vpc_private
 }
+
+output "aws_az" {
+     value = var.aws_az
+}
