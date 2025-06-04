@@ -13,3 +13,7 @@ variable "aws_vpc_public" {
 variable "aws_vpc_private" {
      type = list(string)
 }
+
+variable "aws_az" {
+     type = list(string)
+}
